@@ -45,7 +45,10 @@
                     },
                     sucess: function (data, status) {
                         alert("Data: " + data + "\nStatus: " + status);
-                    }
+                    },
+					error:function(error){
+						alert(error);
+					}
                 });
             });
 
@@ -66,7 +69,10 @@
                     },
                     sucess: function (data, status) {
                         alert("Data: " + data + "\nStatus: " + status);
-                    }
+                    },
+					error:function(error){
+						alert(error);
+					}
                 });
             });
         });
@@ -76,6 +82,7 @@
 <body>
     <button id="btn_login"  value="login">登录</button>
     <button id="btn_daka"  value="daka" >打卡</button>
-    </div>
+    <div id="div_result">
+	</div>
 </body>
 </html>
